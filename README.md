@@ -1,80 +1,102 @@
-#  Event Management GUI
+# Event Management GUI
 
-##  Overview
-This project is a Python-based Event Management application with a graphical user interface (GUI).  
-It allows users to register for events, manage participant data, generate PDF reports, and play audio feedback.  
-Designed as part of an **IP subject project**, it demonstrates integration of multiple Python libraries for real-world functionality.
+A Python-based desktop application for managing events, registrations, and participant data — built with a clean graphical interface using Tkinter.
 
 ---
 
-##  Features
--  User-friendly GUI built with **Tkinter**
--  Image handling with **PIL (Pillow)**
--  Event data stored and managed in **CSV/Excel files**
--  PDF generation using **FPDF**
--  Audio playback with **Pygame**
--  Simple login and registration system
+## Features
+
+- **User authentication** — Login and registration system backed by Excel storage
+- **Event registration** — Register participants and manage event data
+- **PDF reports** — Generate printable registration summaries
+- **Audio feedback** — Plays a sound on successful login
+- **Data persistence** — All records stored in structured CSV/Excel files
 
 ---
 
-##  Installation
+## Tech Stack
 
-1. **Clone the repository**
-   git clone https://github.com/vedantsharma2586/IP-Project.git
-   cd IP-Project
-
-2. **Install dependencies**
-   pip install -r requirements.txt
-
----
-
-##  Usage
-
-Run the main application:
-   python event_gui.py
-
-- Login with your credentials (stored in `users.xlsx`).
-- Register for events and manage participant data.
-- Generate PDF reports for registrations.
-- Enjoy audio feedback on login.
+| Library | Purpose |
+|---|---|
+| `tkinter` | GUI framework (built-in) |
+| `Pillow` | Image handling |
+| `fpdf` | PDF generation |
+| `pygame` | Audio playback |
+| `pandas` | Data management (Excel/CSV) |
 
 ---
 
-##  Requirements
+## Getting Started
 
-The project depends on:
-- tkinter (built-in with Python)
-- pillow
-- fpdf
-- pygame
-- pandas
+### 1. Clone the repository
 
-Install them all at once:
-   pip install -r requirements.txt
+```bash
+git clone https://github.com/vedantsharma2586/IP-Project.git
+cd IP-Project
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+
+```bash
+python event_gui.py
+```
 
 ---
 
-##  Project Structure
+## Usage
 
+1. **Login** using credentials stored in `users.xlsx`, or register a new account.
+2. **Browse and register** for available events.
+3. **Manage records** — view and update participant data.
+4. **Generate a PDF report** for any registration.
+
+---
+
+## Project Structure
+
+```
 IP-Project/
-│
-├── event_gui.py          # Main GUI application
+├── event_gui.py          # Main application entry point
 ├── events.xlsx           # Event details
 ├── registrations.xlsx    # Registration records
-├── users.xlsx            # User login data
+├── users.xlsx            # User login credentials
 ├── logo.png              # Application logo
-├── login.mp3             # Audio feedback
-├── requirements.txt      # Dependencies
+├── login.mp3             # Login audio feedback
+├── requirements.txt      # Python dependencies
 └── README.md             # Project documentation
+```
 
 ---
 
-##  License
-This project is for **educational purposes** (IP subject).  
-You may use and modify it freely.
+## Requirements
+
+- Python 3.x
+- All dependencies listed in `requirements.txt`
+
+Install everything at once:
+
+```bash
+pip install -r requirements.txt
+```
+
+> `tkinter` comes bundled with standard Python installations and does not need to be installed separately.
 
 ---
 
-##  Credits
-Developed by **Vedant Sharma**  
-Email: arushi.verma10101@gmail.com
+## License
+
+This project was developed for educational purposes as part of an IP subject.  
+Feel free to use and modify it freely.
+
+---
+
+## Author
+
+**Vedant Sharma**  
+📧 arushi.verma10101@gmail.com
